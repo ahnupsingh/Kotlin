@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_test"
+        android:name="com.example.myapplication.ui.tests.BooksFragment"
+        android:label="@string/title_batches"
+        tools:layout="@layout/fragment_test" />
+
+    <fragment
+        android:id="@+id/navigation_batches"
+        android:name="com.example.myapplication.ui.batches.BatchesFragment"
+        android:label="@string/title_batches"
+        tools:layout="@layout/fragment_batches" />
+
+    <fragment
+        android:id="@+id/navigation_library"
+        android:name="com.example.myapplication.ui.library.LibraryFragment"
+        android:label="@string/title_library"
+        tools:layout="@layout/fragment_library" />
+
+    <fragment
+        android:id="@+id/navigation_books"
+        android:name="com.example.myapplication.ui.tests.BooksFragment"
+        android:label="@string/title_books"
+        tools:layout="@layout/fragment_books" />
+</navigation>
